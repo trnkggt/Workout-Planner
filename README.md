@@ -8,8 +8,8 @@ API Collection with JWT authorization
 
 ```bash
 mkdir mainfolder
-git clone https://github.com/trnkggt/Workout-Planner.git
 cd mainfolder
+git clone https://github.com/trnkggt/Workout-Planner.git
 python -m venv venv
 venv\Scripts\Activate
 pip install requirements.txt
