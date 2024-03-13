@@ -31,7 +31,8 @@ class ExerciseDetails(models.Model):
                                      on_delete=models.CASCADE,
                                      related_name="exercises")
     exercise = models.ForeignKey("exercises.Exercise",
-                                 on_delete=models.CASCADE)
+                                 on_delete=models.CASCADE,
+                                 null=True)
     repetitions = models.PositiveIntegerField(null=True, blank=True)
     sets = models.PositiveIntegerField(null=True, blank=True)
     duration = models.DurationField()
