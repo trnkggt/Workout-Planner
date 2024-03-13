@@ -3,6 +3,7 @@ from rest_framework.test import APITestCase
 from django.contrib.auth import get_user_model
 from django.urls import reverse
 from .models import Exercise
+from .serializers import ExerciseSerializer
 
 User = get_user_model()
 
@@ -44,6 +45,22 @@ class ExerciseViewSetTestCaseCommonUser(APITestCase):
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data), 2)
+
+    def test_exercise_list_muscle_group(self):
+        url = reverse("exercise-muscle-group")
+        self.client.force_authenticate(self.user)
+        response = self.client.get(url, {"muscle_group": "chest"})
+        expected_exercises = Exercise.objects.filter(muscle_group="chest")
+        serialized_data = ExerciseSerializer(expected_exercises, many=True).data
+        self.assertEqual(response.data, serialized_data)
+
+    def test_exercise_list_equipment(self):
+        url = reverse("exercise-equipment")
+        self.client.force_authenticate(self.user)
+        response = self.client.get(url, {"equipment": "barbell"})
+        expected_exercises = Exercise.objects.filter(muscle_group="barbell")
+        serialized_data = ExerciseSerializer(expected_exercises, many=True).data
+        self.assertEqual(response.data, serialized_data)
 
     def test_exercise_list_admin(self):
         url = reverse('exercise-list')
