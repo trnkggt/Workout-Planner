@@ -7,17 +7,17 @@ from exercises.models import Exercise
 
 class ExerciseDetailsSerializer(serializers.ModelSerializer):
     id = serializers.IntegerField(required=False)
-    exercise_id = serializers.PrimaryKeyRelatedField(queryset=Exercise.objects.all())
+    exercise = serializers.PrimaryKeyRelatedField(queryset=Exercise.objects.all())
 
     class Meta:
         model = ExerciseDetails
         fields = ['id', 'repetitions', 'sets',
-                  'duration', 'distance', 'exercise_id']
+                  'duration', 'distance', 'exercise']
         depth = 2
 
 
 class WorkoutPlanSerializer(serializers.ModelSerializer):
-    exercises = ExerciseDetailsSerializer(many=True)
+    exercises = ExerciseDetailsSerializer(many=True, required=False)
 
     class Meta:
         model = WorkoutPlan
@@ -42,13 +42,16 @@ class WorkoutPlanSerializer(serializers.ModelSerializer):
         """
         Override update() to be able to update nested objects
         """
-        exercises = validated_data.pop("exercises")
+        exercises = None
+        if "exercises" in validated_data:
+            exercises = validated_data.pop("exercises")
         instance = super().update(instance, validated_data)
-        for record in exercises:
-            id = record.pop('id')
-            detail_object = ExerciseDetails.objects.filter(id=id).update(
-                **record
-            )
+        if exercises is not None:
+            for record in exercises:
+                id = record.pop('id')
+                detail_object = ExerciseDetails.objects.filter(id=id).update(
+                    **record
+                )
 
         return instance
 
