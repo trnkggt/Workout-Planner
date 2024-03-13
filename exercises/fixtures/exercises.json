@@ -1,0 +1,299 @@
+[
+    {
+        "model": "exercises.exercise",
+        "pk": 1,
+        "fields": {
+            "name": "Bench Press",
+            "muscle_group": "Chest",
+            "equipment": "Barbell",
+            "description": "A compound exercise for building upper body strength.",
+            "instructions": "Lie on a flat bench and lower the bar to your chest. Press it back up."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 2,
+        "fields": {
+            "name": "Deadlifts",
+            "muscle_group": "Back",
+            "equipment": "Barbell",
+            "description": "One of the best compound exercises for overall strength and muscle building.",
+            "instructions": "Stand with your feet hip-width apart, grip the barbell, and lift it while keeping your back straight."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 3,
+        "fields": {
+            "name": "Squats",
+            "muscle_group": "Legs",
+            "equipment": "Barbell",
+            "description": "A fundamental lower body exercise that targets the quads, hamstrings, and glutes.",
+            "instructions": "Stand with feet shoulder-width apart, lower your body by bending your knees and hips, then return to the starting position."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 4,
+        "fields": {
+            "name": "Pull-Ups",
+            "muscle_group": "Back",
+            "equipment": "Body Weight",
+            "description": "A bodyweight exercise for developing upper body strength and back muscles.",
+            "instructions": "Hang from a pull-up bar with your palms facing away. Pull yourself up until your chin is above the bar, then lower back down."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 5,
+        "fields": {
+            "name": "Push-Ups",
+            "muscle_group": "Chest",
+            "equipment": "Body Weight",
+            "description": "A classic bodyweight exercise for strengthening the chest, shoulders, and triceps.",
+            "instructions": "Start in a plank position with hands shoulder-width apart. Lower your body until your chest nearly touches the ground, then push back up."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 6,
+        "fields": {
+            "name": "Barbell Rows",
+            "muscle_group": "Back",
+            "equipment": "Barbell",
+            "description": "An effective compound exercise for building back strength and size.",
+            "instructions": "Bend over with a barbell in hand, pull it towards your chest, then lower it back down."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 7,
+        "fields": {
+            "name": "Lunges",
+            "muscle_group": "Legs",
+            "equipment": "Body Weight",
+            "description": "A unilateral lower body exercise that targets the quads, hamstrings, and glutes.",
+            "instructions": "Step forward with one leg and lower your body until both knees are bent at 90 degrees, then return to the starting position."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 8,
+        "fields": {
+            "name": "Dumbbell Shoulder Press",
+            "muscle_group": "Shoulders",
+            "equipment": "Dumbbell",
+            "description": "An effective shoulder exercise that targets the deltoids.",
+            "instructions": "Sit on a bench with dumbbells in hand, press them overhead until arms are fully extended, then lower them back down."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 9,
+        "fields": {
+            "name": "Dumbbell Bicep Curls",
+            "muscle_group": "Biceps",
+            "equipment": "Dumbbell",
+            "description": "An isolation exercise for building bicep strength and size.",
+            "instructions": "Stand with dumbbells in hand, curl them towards your shoulders while keeping your elbows stationary, then lower them back down."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 10,
+        "fields": {
+            "name": "Tricep Dips",
+            "muscle_group": "Triceps",
+            "equipment": "Body Weight",
+            "description": "A bodyweight exercise for targeting the triceps.",
+            "instructions": "Place your hands on parallel bars, lower your body until your elbows are at 90 degrees, then push back up."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 11,
+        "fields": {
+            "name": "Leg Press",
+            "muscle_group": "Legs",
+            "equipment": "Machine",
+            "description": "A machine-based exercise for targeting the quads, hamstrings, and glutes.",
+            "instructions": "Sit on the leg press machine, press the weight away from your body until legs are fully extended, then return to the starting position."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 12,
+        "fields": {
+            "name": "Incline Bench Press",
+            "muscle_group": "Chest",
+            "equipment": "Barbell",
+            "description": "A variation of the bench press that targets the upper chest.",
+            "instructions": "Lie on an incline bench and perform a bench press motion with a barbell."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 13,
+        "fields": {
+            "name": "Lat Pulldowns",
+            "muscle_group": "Back",
+            "equipment": "Machine",
+            "description": "A machine-based exercise for targeting the back muscles, particularly the latissimus dorsi.",
+            "instructions": "Sit at a lat pulldown machine, grasp the bar, pull it down to your chest, then return it to the starting position."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 14,
+        "fields": {
+            "name": "Calf Raises",
+            "muscle_group": "Calves",
+            "equipment": "Machine",
+            "description": "An exercise for strengthening the calf muscles.",
+            "instructions": "Stand on a calf raise machine or a raised surface with your heels hanging off, then lift your heels as high as possible before lowering them back down."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 15,
+        "fields": {
+            "name": "Hamstring Curls",
+            "muscle_group": "Hamstrings",
+            "equipment": "Machine",
+            "description": "An isolation exercise for targeting the hamstring muscles.",
+            "instructions": "Lie face down on a hamstring curl machine, curl your legs up towards your glutes, then lower them back down."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 16,
+        "fields": {
+            "name": "Dumbbell Lunges",
+            "muscle_group": "Legs",
+            "equipment": "Dumbbell",
+            "description": "A variation of lunges using dumbbells for added resistance.",
+            "instructions": "Hold dumbbells in each hand, step forward with one leg and lower your body until both knees are bent at 90 degrees, then return to the starting position."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 17,
+        "fields": {
+            "name": "Seated Cable Rows",
+            "muscle_group": "Back",
+            "equipment": "Machine",
+            "description": "A machine-based exercise for targeting the back muscles, particularly the lats and rhomboids.",
+            "instructions": "Sit at a cable row machine, grasp the handles, pull them towards your torso, then return them to the starting position."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 18,
+        "fields": {
+            "name": "Dumbbell Bench Press",
+            "muscle_group": "Chest",
+            "equipment": "Dumbbell",
+            "description": "A variation of the bench press using dumbbells for added stability.",
+            "instructions": "Lie on a bench with dumbbells in hand, press them upwards until arms are fully extended, then lower them back down."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 19,
+        "fields": {
+            "name": "Leg Extensions",
+            "muscle_group": "Quads",
+            "equipment": "Machine",
+            "description": "An isolation exercise for targeting the quadriceps muscles.",
+            "instructions": "Sit on a leg extension machine, extend your legs until they are parallel to the ground, then return them to the starting position."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 20,
+        "fields": {
+            "name": "Russian Twists",
+            "muscle_group": "Core",
+            "equipment": "Body Weight",
+            "description": "An exercise for strengthening the obliques and core muscles.",
+            "instructions": "Sit on the floor with your knees bent, lean back slightly, and rotate your torso from side to side while holding a weight or medicine ball."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 21,
+        "fields": {
+            "name": "Plank",
+            "muscle_group": "Core",
+            "equipment": "Body Weight",
+            "description": "A static exercise for strengthening the core muscles.",
+            "instructions": "Get into a push-up position, but with your weight on your forearms instead of your hands, and hold the position for as long as possible."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 22,
+        "fields": {
+            "name": "Reverse Crunches",
+            "muscle_group": "Core",
+            "equipment": "Body Weight",
+            "description": "An exercise for targeting the lower abdominal muscles.",
+            "instructions": "Lie on your back with your knees bent and lift your hips off the ground while bringing your knees towards your chest, then lower them back down."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 23,
+        "fields": {
+            "name": "Overhead Tricep Extensions",
+            "muscle_group": "Triceps",
+            "equipment": "Dumbbell",
+            "description": "An exercise for targeting the triceps muscles.",
+            "instructions": "Stand with a dumbbell in hand, extend your arm overhead, then lower the dumbbell behind your head until your forearm is parallel to the ground, then extend it back up."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 24,
+        "fields": {
+            "name": "Hanging Leg Raises",
+            "muscle_group": "Core",
+            "equipment": "Body Weight",
+            "description": "An exercise for targeting the lower abdominal muscles.",
+            "instructions": "Hang from a pull-up bar with legs straight, raise your legs until they are parallel to the ground, then lower them back down."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 25,
+        "fields": {
+            "name": "Dumbbell Shoulder Shrugs",
+            "muscle_group": "Traps",
+            "equipment": "Dumbbell",
+            "description": "An exercise for targeting the trapezius muscles.",
+            "instructions": "Stand with dumbbells in hand, shrug your shoulders upwards towards your ears, then lower them back down."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 26,
+        "fields": {
+            "name": "Side Lateral Raises",
+            "muscle_group": "Shoulders",
+            "equipment": "Dumbbell",
+            "description": "An exercise for targeting the lateral deltoids.",
+            "instructions": "Stand with dumbbells in hand, raise them to the sides until arms are parallel to the ground, then lower them back down."
+        }
+    },
+    {
+        "model": "exercises.exercise",
+        "pk": 27,
+        "fields": {
+            "name": "Barbell Curls",
+            "muscle_group": "Biceps",
+            "equipment": "Barbell",
+            "description": "A classic bicep exercise for building arm strength and size.",
+            "instructions": "Stand with a barbell in hand, curl it towards your shoulders while keeping your elbows stationary, then lower it back down."
+        }
+    }
+]

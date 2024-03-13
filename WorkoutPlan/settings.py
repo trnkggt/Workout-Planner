@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt.token_blacklist",
 
     "users.apps.UsersConfig",
-
+    "exercises.apps.ExercisesConfig"
 ]
 
 MIDDLEWARE = [
