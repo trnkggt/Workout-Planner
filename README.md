@@ -10,6 +10,7 @@ API Collection with JWT authorization
 mkdir mainfolder
 cd mainfolder
 git clone https://github.com/trnkggt/Workout-Planner.git
+cd Workout-Planner
 python -m venv venv
 venv\Scripts\Activate
 pip install -r requirements.txt
