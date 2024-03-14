@@ -22,4 +22,4 @@ python manage.py runserver
 
 ## Usage
 
-To view Swagger API endpoints: localhost:8000/api/swagger
+To view Swagger API endpoints: localhost:8000/api/schema/swagger
