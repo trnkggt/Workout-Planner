@@ -12,7 +12,7 @@ cd mainfolder
 git clone https://github.com/trnkggt/Workout-Planner.git
 python -m venv venv
 venv\Scripts\Activate
-pip install requirements.txt
+pip install -r requirements.txt
 
 python manage.py makemigrations
 python manage.py migrate
